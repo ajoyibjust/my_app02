@@ -37,7 +37,7 @@ class BottomNav extends StatelessWidget {
               context.go('/favorites');
               break;
             case 3:
-              context.go('/setting');
+              context.push('/setting');
               break;
           }
         },

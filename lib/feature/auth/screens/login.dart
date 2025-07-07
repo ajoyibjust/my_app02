@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:my_app2/core/extension/sizedbox_extension.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -23,22 +24,22 @@ class _LoginState extends State<Login> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 50),
+              50.height,
               Text(
                 "Login Account",
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 10),
+              10.height,
               Text(
                 "Please login with registered account",
                 style: TextStyle(fontSize: 14, color: Colors.grey),
               ),
-              SizedBox(height: 20),
+              20.height,
               Text(
                 "Email or Phone number",
                 style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
               ),
-              SizedBox(height: 15),
+              15.height,
               TextFormField(
                 controller: _emailController,
                 decoration: InputDecoration(
@@ -65,12 +66,12 @@ class _LoginState extends State<Login> {
                   return null;
                 },
               ),
-              SizedBox(height: 20),
+              20.height,
               Text(
                 "Password",
                 style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
               ),
-              SizedBox(height: 15),
+              15.height,
               TextFormField(
                 controller: _passwordController,
                 decoration: InputDecoration(
@@ -97,7 +98,7 @@ class _LoginState extends State<Login> {
                   return null;
                 },
               ),
-              SizedBox(height: 15),
+              15.height,
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -110,7 +111,7 @@ class _LoginState extends State<Login> {
                   ),
                 ],
               ),
-              SizedBox(height: 30),
+              30.height,
               FilledButton(
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
@@ -126,12 +127,12 @@ class _LoginState extends State<Login> {
                 ),
                 child: Text("Sign In", style: TextStyle(fontSize: 18)),
               ),
-              SizedBox(height: 30),
+              30.height,
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [Text("Or using other method")],
               ),
-              SizedBox(height: 20),
+              20.height,
               GestureDetector(
                 onTap: () {},
                 child: Container(
@@ -159,7 +160,7 @@ class _LoginState extends State<Login> {
                   ),
                 ),
               ),
-              SizedBox(height: 20),
+              20.height,
               GestureDetector(
                 onTap: () {},
                 child: Container(
