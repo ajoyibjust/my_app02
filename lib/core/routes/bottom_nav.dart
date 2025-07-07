@@ -8,7 +8,7 @@ class BottomNav extends StatelessWidget {
   int _calculateIndex(String location) {
     if (location.startsWith('/order')) return 1;
     if (location.startsWith('/favorites')) return 2;
-    if (location.startsWith('/profile')) return 3;
+    if (location.startsWith('/setting')) return 3;
     return 0;
   }
 
@@ -37,7 +37,7 @@ class BottomNav extends StatelessWidget {
               context.go('/favorites');
               break;
             case 3:
-              context.go('/profile');
+              context.go('/setting');
               break;
           }
         },

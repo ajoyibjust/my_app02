@@ -44,7 +44,11 @@ class HomeScreen extends StatelessWidget {
                     },
                     icon: Icon(Icons.search, size: 28),
                   ),
-                  Icon(Icons.notifications_none, size: 28),
+                  GestureDetector(
+                    onTap: () {
+                      context.push('/notification');
+                    },
+                    child: Icon(Icons.notifications_none, size: 28)),
                 ],
               ),
 

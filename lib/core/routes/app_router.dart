@@ -9,12 +9,16 @@ import 'package:my_app2/core/routes/splash_router.dart';
 import 'package:my_app2/feature/auth/screens/register.dart';
 import 'package:my_app2/feature/home/domain/entities/product_entity.dart';
 import 'package:my_app2/feature/home/presentation/screens/address_screen.dart';
+import 'package:my_app2/feature/home/presentation/screens/notification.dart';
 import 'package:my_app2/feature/home/presentation/screens/payment_screen.dart';
 import 'package:my_app2/feature/home/presentation/screens/product_screen.dart';
 import 'package:my_app2/feature/home/presentation/screens/search/search.dart';
 import 'package:my_app2/feature/home/presentation/screens/search/search_empty.dart';
 import 'package:my_app2/feature/home/presentation/screens/search/search_not_empty.dart';
 import 'package:my_app2/feature/order/presentation/screen/cart_screen.dart';
+import 'package:my_app2/feature/profile/presentation/screen/change_password.dart';
+import 'package:my_app2/feature/profile/presentation/screen/profile_screen.dart';
+import 'package:my_app2/feature/profile/presentation/screen/settings_screen.dart';
 
 final GoRouter appRouter = GoRouter(
   initialLocation: '/splash',
@@ -27,6 +31,10 @@ final GoRouter appRouter = GoRouter(
      GoRoute(path: "/address", builder: (context, state) => AddressScreen()),
      GoRoute(path: "/searchEmpty", builder: (context, state) => SearchEmpty()),
      GoRoute(path: "/searchNotEmpty", builder: (context, state) => SearchNotEmpty()),
+     GoRoute(path: "/setting", builder: (context, state) => SettingsScreen()),
+     GoRoute(path: "/profile", builder: (context, state) => ProfileScreen()),
+     GoRoute(path: "/notification", builder: (context, state) => Notification()),
+     GoRoute(path: "/changePassword", builder: (context, state) => ChangePassword()),
         ...splashRoutes,
         ...authRoutes,
     ShellRoute(
