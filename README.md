@@ -1,3 +1,1 @@
-# my_app2
-
-A new Flutter project.
+https://youtu.be/_A2vuTSF8hE?si=i3ULW8nHC-_q6zWc
